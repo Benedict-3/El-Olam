@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Verification - El-Olam Global Academy</title>
+    <link rel="stylesheet" href="result_checker.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo-section">
+                <div class="logo">EGA</div>
+                <div class="school-name">El-Olam Global Academy</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admissions</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu">☰</div>
+        </nav>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="page-title">
+        <div class="container">
+            <h1>Student Result Verification Portal</h1>
+            <p>Securely access your academic reports and progress updates</p>
+        </div>
+    </section>
+
+    <!-- Result Checker Form -->
+    <section class="form-section">
+        <div class="container">
+            <h2 class="section-title">Enter Student Details</h2>
+            <div class="form-container">
+                <form id="resultForm">
+                    <div class="form-group">
+                        <label for="studentName">Student Name</label>
+                        <input type="text" id="studentName" class="form-control" placeholder="Enter full name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="studentClass">Class/Grade</label>
+                            <select id="studentClass" class="form-control" required>
+                                <option value="" disabled selected>Select Class</option>
+                                <option value="primary1">Primary 1</option>
+                                <option value="primary2">Primary 2</option>
+                                <option value="primary3">Primary 3</option>
+                                <option value="primary4">Primary 4</option>
+                                <option value="primary5">Primary 5</option>
+                                <option value="jss1">JSS 1</option>
+                                <option value="jss2">JSS 2</option>
+                                <option value="jss3">JSS 3</option>
+                                <option value="sss1">SSS 1</option>
+                                <option value="sss2">SSS 2</option>
+                                <option value="sss3">SSS 3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studentId">Student ID/Registration Number</label>
+                            <input type="text" id="studentId" class="form-control" placeholder="Enter ID number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="academicTerm">Academic Term</label>
+                            <select id="academicTerm" class="form-control" required>
+                                <option value="" disabled selected>Select Term</option>
+                                <option value="term1">Term 1</option>
+                                <option value="term2">Term 2</option>
+                                <option value="term3">Term 3</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="academicYear">Academic Session</label>
+                            <select id="academicYear" class="form-control" required>
+                                <option value="" disabled selected>Select Session</option>
+                                <option value="2024-2025">2024-2025</option>
+                                <option value="2023-2024">2023-2024</option>
+                                <option value="2022-2023">2022-2023</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Check Results</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- QR Code Section -->
+    <section class="qr-section">
+        <div class="container">
+            <h2 class="section-title">Or Scan Your Student ID Card</h2>
+            <div class="qr-container">
+                <div class="qr-scanner">
+                    <div>📱</div>
+                    <p>Camera Scanner Area</p>
+                </div>
+                <button class="secondary-button" id="activateScanner">Activate Scanner</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" id="contact-details">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>18/20 El-Olam Avenue<br>
+                    Egbelu,Ozodo off ogbogoro Rd<br>
+                    Port-Harcourt, Rivers State, Nigeria <br>
+                    Phone: (+234) 803 791 4553<br>
+                    Email: info@elolamacademy.edu</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="admission.html">Admissions</a></li>
+                        <li><a href="blog.html">School Calendar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#handbook">Student Handbook</a></li>
+                        <li><a href="#employment">Employment</a></li>
+                        <li><a href="#policies">School Policies</a></li>
+                        <li><a href="#support">Support Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <div class="social-icon">f</div>
+                        <div class="social-icon">𝕏</div>
+                        <div class="social-icon">in</div>
+                        <div class="social-icon">📷</div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 El-Olam Global Academy. All rights reserved. | <a href="#privacy" style="color: #9ACD32;">Privacy Policy</a> | <a href="#terms" style="color: #9ACD32;">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.getElementById('resultForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, this would connect to a backend API
+            // For demonstration, we'll simulate a loading state and success message
+            const submitButton = this.querySelector('.cta-button');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Checking...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                // Simulate API call delay
+                alert('Results retrieved successfully! In a real implementation, this would display the student\'s results.');
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 1500);
+        });
+        
+        // QR Scanner activation
+        document.getElementById('activateScanner').addEventListener('click', function() {
+            // In a real implementation, this would activate the device camera
+            alert('Camera scanner activated! In a real implementation, this would open the device camera for QR scanning.');
+        });
+    </script>
+</body>
+</html>

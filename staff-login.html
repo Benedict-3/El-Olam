@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Secure Login - El-Olam Global Academy</title>
+    <link rel="stylesheet" href="staff-login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <!-- Logo & Branding -->
+            <div class="logo-section">
+                <div class="logo">EGA</div>
+                <div class="school-name">El-Olam Global Academy</div>
+            </div>
+            
+            <!-- Login Title -->
+            <h2 class="login-title">Staff Secure Login</h2>
+            
+            <!-- Login Form -->
+            <form class="login-form" id="staffLoginForm">
+                <div class="form-group">
+                    <label for="staffId">Staff ID or Email</label>
+                    <input type="text" id="staffId" class="form-control" placeholder="Enter your staff ID or email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                
+                <button type="submit" class="cta-button">Secure Sign In</button>
+            </form>
+            
+            <!-- Utility Links -->
+            <div class="utility-links">
+                <a href="#forgot-password">Forgot Password?</a>
+                <a href="#help">Need Help?</a>
+            </div>
+            
+            <!-- Security Notice -->
+            <div class="security-notice">
+                <strong>Security Notice:</strong> This portal is for authorized staff only. All activities are monitored and logged.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handling
+        document.getElementById('staffLoginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // In a real implementation, this would connect to a secure authentication API
+            const submitButton = this.querySelector('.cta-button');
+            const originalText = submitButton.textContent;
+            
+            submitButton.textContent = 'Authenticating...';
+            submitButton.disabled = true;
+            
+            // Simulate authentication process
+            setTimeout(() => {
+                // In a real implementation, this would redirect to staff dashboard
+                alert('Authentication successful! In a real implementation, this would redirect to the staff dashboard.');
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

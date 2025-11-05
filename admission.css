@@ -1,0 +1,413 @@
+/* Admissions Page Specific Styles */
+        
+        /* Active Navigation Link */
+        .nav-links a.active {
+            color: #9ACD32;
+            border-bottom: 3px solid #9ACD32;
+            padding-bottom: 5px;
+        }
+
+        /* Admissions Hero Section */
+        .admissions-hero {
+            background-image: linear-gradient(rgba(154, 205, 50, 0.85), rgba(122, 184, 45, 0.85)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNCxI8HRVYO6BpLKhQtFqHG-2gOX8CIw2G5A&s);
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .admissions-hero-content {
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .admissions-hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .admissions-hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* Process Steps Section */
+        .process-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            border-top: 4px solid #9ACD32;
+        }
+
+        .step-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(154, 205, 50, 0.2);
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #9ACD32, #7AB82D);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 4px 10px rgba(154, 205, 50, 0.3);
+        }
+
+        .step-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .step-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .step-card ul {
+            list-style: none;
+            margin-top: 1rem;
+            text-align: left;
+            color: #555;
+        }
+
+        .step-card ul li {
+            padding: 0.4rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .step-card ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #9ACD32;
+            font-weight: bold;
+        }
+
+        /* Important Dates Section */
+        .dates-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .dates-table-container {
+            margin-top: 3rem;
+            overflow-x: auto;
+        }
+
+        .dates-table {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .dates-table thead {
+            background: linear-gradient(135deg, #9ACD32, #7AB82D);
+            color: white;
+        }
+
+        .dates-table th {
+            padding: 1.5rem;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .dates-table td {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e8f5e9;
+            color: #2c3e50;
+        }
+
+        .dates-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .dates-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        .dates-table td:first-child {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .dates-table td:last-child {
+            color: #666;
+        }
+
+        /* Tuition & Financial Aid Section */
+        .tuition-section {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .tuition-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 2rem auto 3rem;
+        }
+
+        .tuition-intro p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .tuition-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .tuition-card {
+            background: linear-gradient(135deg, #9ACD32, #7AB82D);
+            color: white;
+            padding: 3rem 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: block;
+            box-shadow: 0 5px 20px rgba(154, 205, 50, 0.3);
+        }
+
+        .tuition-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(154, 205, 50, 0.4);
+        }
+
+        .tuition-card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .tuition-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .tuition-card p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #f8f9fa;
+            padding: 4rem 0;
+        }
+
+        .contact-box {
+            max-width: 800px;
+            margin: 3rem auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-box p {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-item-icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: #2c3e50;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item a {
+            color: #9ACD32;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #7AB82D;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #9ACD32, #7AB82D);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .cta-button {
+            background: white;
+            color: #9ACD32;
+        }
+
+        .cta-section .cta-button:hover {
+            background: #2c3e50;
+            color: white;
+        }
+
+                /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 200px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            z-index: 1001;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.3s;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-content a:hover {
+            background: #f8f9fa;
+            color: #9ACD32;
+            padding-left: 2rem;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Add a subtle arrow indicator for dropdown */
+        .dropdown > a::after {
+            content: ' ▼';
+            font-size: 0.7em;
+            margin-left: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .admissions-hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .admissions-hero p {
+                font-size: 1.05rem;
+            }
+
+            .admissions-hero {
+                height: 450px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .tuition-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
+            .dates-table {
+                font-size: 0.9rem;
+            }
+
+            .dates-table th,
+            .dates-table td {
+                padding: 1rem;
+            }
+        }
