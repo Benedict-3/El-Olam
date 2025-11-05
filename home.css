@@ -79,7 +79,7 @@
 
         /* Hero Section */
         .hero {
-            background-image: linear-gradient(rgba(154, 205, 50, 0.85), rgba(122, 184, 45, 0.85)), url(school_background.png);
+            background-image: linear-gradient(rgba(154, 205, 50, 0.85), rgba(122, 184, 45, 0.85)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNCxI8HRVYO6BpLKhQtFqHG-2gOX8CIw2G5A&s);
             background-size: cover;
             background-position: center;
             height: 600px;
@@ -470,4 +470,5 @@
             .highlights {
                 grid-template-columns: 1fr;
             }
+
         }
